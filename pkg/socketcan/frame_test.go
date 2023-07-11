@@ -41,6 +41,7 @@ func TestFrame_EncodeDecode(t *testing.T) {
 				dataLengthCode: 8,
 				data:           [8]byte{1, 2, 3, 4, 5, 6, 7, 8},
 			},
+			
 		},
 		{
 			msg: "extended",

@@ -1,0 +1,8 @@
+docker build -t myimage .
+
+docker run -d -p 5004:5004 -p 8080:8080 -v "C:/Users/RayBe/go/src/firstmode/can-go/input":/app/input -v "C:/Users/RayBe/go/src/firstmode/can-go/output":/app/output --name mycontainer myimage
+
+
+docker exec -it mycontainer bash
+
+go run go.einride.tech/can/cmd/cantool generate  ./input ./output
